@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@keyframes noise{
+  0% {background-position-y: 0px;}
+  100% {background-position-y: -420px;}
+}
+body, html{
+  overflow:hidden;
+  margin:0px;
+  background: rgb(31, 31, 31);
+  height:100vh;
+  box-shadow:0px 0px 122px 25px black inset;
+  background-image:url('https://i.imgur.com/eg7VIun.jpg');
+  background-repeat:repeat;
+  animation:noise 230ms steps(6) infinite;
+
+}
+.glitch {
+  user-select: none;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-family: monospace;
+  font-size:100px;
+  animation:glitch 1000ms steps(10) infinite;
+  padding: 100px 0;
+}
+.glitch::before{
+  font-family: monospace;
+  content:'ERROR 404!';
+  color:black;
+  text-shadow:0px 0px 5px 10px black!IMPORTANT;
+  filter: blur(7px);
+  display:block;
+  position:absolute;
+  z-index:-1;
+  font-size:132px;
+  left:0px;
+  right:0px;
+  margin-top:-30px;
+  opacity:.5;
+}
+.mini-glitch {
+  user-select: none;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-family: monospace;
+  font-size:100px;
+  animation:glitch 1000ms steps(10) infinite;
+  padding: 80px 0;
+}
+.mini-glitch::before{
+  font-family: monospace;
+  content:'Where are you?';
+  color:black;
+  text-shadow:0px 0px 5px 10px black!IMPORTANT;
+  filter: blur(7px);
+  display:block;
+  position:absolute;
+  z-index:-1;
+  font-size:112px;
+  left:0px;
+  right:0px;
+  margin-top:-30px;
+  opacity:.5;
+}
+@keyframes glitch {
+  0% {transform: skew(0deg); text-shadow: -2px 8px 3px #00FF00EE;}
+  3% {transform: skew(70deg); text-shadow: 10px 1px 5px #00FF00EE;}
+  7% {transform: skew(-75deg); text-shadow: -9px 2px 2px #FF0000DD;}
+  10% {transform: skew(-20deg) scale(0.5, 1); text-shadow: 9px -2px 2px #0000EEEE;}
+  11% {transform: skew(-60deg); text-shadow: 1px 2px -4px #990099AA;}
+  50, 13% {transform: skew(50deg); text-shadow: 1px 2px -4px #00CC55DD;}
+  14% {transform: skew(50deg); text-shadow: 0px -2px -4px #FFFFFFCC;}
+  16% {transform: skew(10deg); text-shadow: 0px -2px -4px #00DDEECC;}
+
+  100% {transform: skew(0deg) scale(1, 1.2);}
+}
+</style>
+</head>
+<body>
+
+<div class="glitch">ERROR 404!</div>
+<div class="mini-glitch">Where are you?</div>
+
+
+</body>
+</html>
