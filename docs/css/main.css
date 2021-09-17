@@ -1,0 +1,26 @@
+.button {
+  font-size: 16pt;
+  font-family: monospace;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px #eeeeee;
+  transition:all 0.3s ease;
+  background-color: #ff0000;
+  padding: 15px;
+  box-shadow: 10px 10px #eeeeee;
+}
+.button:hover {
+  transition:all 0.3s ease;
+  box-shadow: -10px -10px #eeeeee;
+}
+.main-banner {
+  text-align: center;
+  font-size: 30pt;
+  font-family: "Ubuntu";
+}
+.mini-banner {
+  text-align: center;
+  font-size: 20pt;
+  font-family: "Ubuntu Mono";
+}
