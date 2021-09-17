@@ -1,4 +1,6 @@
 .button {
+  color: white;
+  text-decoration: none;
   font-size: 16pt;
   font-family: monospace;
   display: inline-block;
